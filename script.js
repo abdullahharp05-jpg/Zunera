@@ -91,17 +91,30 @@ const CONFIG = {
         frame.src =
           CONFIG.BOOKING_LINK +
           join +
-          "embed_type=Inline&hide_gdpr_banner=1&background_color=faf6ef&text_color=3a3030&primary_color=e7a9b5";
+          "embed_type=Inline&hide_gdpr_banner=1&hide_event_type_details=1&background_color=faf6ef&text_color=3a3030&primary_color=e7a9b5";
       }
     }
   }
 
+  const bookSection = document.getElementById("book");
   if (!bookingReady) {
     document.querySelectorAll(".js-book").forEach(function (el) {
       el.hidden = true;
     });
-    const bookSection = document.getElementById("book");
     if (bookSection) bookSection.hidden = true;
+  }
+
+  const floatBook = document.querySelector(".float-book");
+  if (floatBook && bookSection && !bookSection.hidden && "IntersectionObserver" in window) {
+    const floatObserver = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          floatBook.classList.toggle("is-hidden", entry.isIntersecting && entry.intersectionRatio > 0.2);
+        });
+      },
+      { threshold: [0, 0.2, 0.45] }
+    );
+    floatObserver.observe(bookSection);
   }
 
   const ld = document.getElementById("ld-json");

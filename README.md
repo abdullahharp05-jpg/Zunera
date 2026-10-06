@@ -31,14 +31,14 @@ Two answers in the FAQ, and the crisis line in the footer, are still written in 
 
 ## Swap the headshot
 
-The portrait is a monogram stand-in, not a photograph.
+The current portrait is the outdoor photograph, cropped to 4:5. To use a different one:
 
 1. Use a vertical photo, ratio 4:5 (800×1000 works well).
 2. Replace both files. Browsers load the WebP first:
    - `assets/headshot.jpg`
    - `assets/headshot.webp`
 3. Keep the photograph under 150 KB.
-4. In `index.html`, update the `alt` text on that image so it describes the real photo.
+4. In `index.html`, update the `alt` text on that image so it describes the photo.
 
 [Squoosh](https://squoosh.app) can export both JPG and WebP in the browser. Optional: replace `assets/og-image.jpg` (1200×630) when you want a different image in link previews.
 
@@ -84,8 +84,8 @@ After it is live, set `SITE_URL` in `script.js` to that address.
 - [ ] **Session length** — FAQ answer is `[ADD SESSION LENGTH, e.g. 45 to 60 minutes]`
 - [ ] **Fees** — FAQ answer is `[ADD FEES OR 'Please message me for details']`
 - [ ] **Local crisis helpline** — footer line `[ADD A VERIFIED LOCAL CRISIS HELPLINE]`
-- [ ] **Portrait photograph** — replace `assets/headshot.jpg` and `assets/headshot.webp`, then the alt text
-- [ ] **Share image** — `assets/og-image.jpg` is a branded placeholder (1200×630), not a photo
+- [x] **Portrait photograph** — using the outdoor portrait in `assets/headshot.jpg` and `assets/headshot.webp`
+- [x] **Share image** — `assets/og-image.jpg` includes that portrait
 - [ ] **Analytics** — the commented block in `<head>` is empty on purpose
 
 `BOOKING_LINK` is already set to `https://calendly.com/zunera194/session`. Clear it only if the calendar should come off the page.
