@@ -269,7 +269,7 @@ const CONFIG = {
             bestId = id;
           }
         });
-        if (best > 0) currentId = bestId;
+        currentId = best > 0 ? bestId : "";
         paintActive();
       },
       {

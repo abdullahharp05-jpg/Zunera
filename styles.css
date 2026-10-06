@@ -387,7 +387,6 @@ main section[id] {
   gap: 8px;
   font-size: 0.95rem;
   line-height: 1.45;
-  max-width: 16rem;
 }
 
 .check {
@@ -595,7 +594,16 @@ main section[id] {
 }
 
 .book-fallback a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   font-weight: 500;
+}
+
+.site-footer a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
 }
 
 .quiet-link {
@@ -735,6 +743,18 @@ main section[id] {
   font-size: 0.92rem;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .float-wa {
   display: none;
 }
@@ -763,10 +783,13 @@ main section[id] {
     margin-right: auto;
   }
 
-  .header-wa,
-  .menu-toggle {
+  .header-wa {
     flex-shrink: 0;
     width: auto;
+  }
+
+  .menu-toggle {
+    flex-shrink: 0;
   }
 }
 
