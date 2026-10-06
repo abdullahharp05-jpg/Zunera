@@ -31,7 +31,7 @@ Two answers in the FAQ, and the crisis line in the footer, are still written in 
 
 ## Swap the headshot
 
-The current portrait is the outdoor photograph, cropped to 4:5. To use a different one:
+The current portrait is the night photograph, cropped to 4:5. To use a different one:
 
 1. Use a vertical photo, ratio 4:5 (800×1000 works well).
 2. Replace both files. Browsers load the WebP first:
@@ -84,7 +84,7 @@ After it is live, set `SITE_URL` in `script.js` to that address.
 - [ ] **Session length** — FAQ answer is `[ADD SESSION LENGTH, e.g. 45 to 60 minutes]`
 - [ ] **Fees** — FAQ answer is `[ADD FEES OR 'Please message me for details']`
 - [ ] **Local crisis helpline** — footer line `[ADD A VERIFIED LOCAL CRISIS HELPLINE]`
-- [x] **Portrait photograph** — using the outdoor portrait in `assets/headshot.jpg` and `assets/headshot.webp`
+- [x] **Portrait photograph** — using the night portrait in `assets/headshot.jpg` and `assets/headshot.webp`
 - [x] **Share image** — `assets/og-image.jpg` includes that portrait
 - [ ] **Analytics** — the commented block in `<head>` is empty on purpose
 
