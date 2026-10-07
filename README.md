@@ -1,6 +1,6 @@
 # Zunera Haroon — Online Counseling
 
-A single-page site for Zunera Haroon, a licensed psychologist offering online counseling. It is plain HTML, CSS, and JavaScript. Open `index.html` in a browser, or serve the folder with any static host. No build step and no configuration file.
+A single-page site for Zunera Haroon, a qualified psychologist offering online counseling. It is plain HTML, CSS, and JavaScript. Open `index.html` in a browser, or serve the folder with any static host. No build step and no configuration file.
 
 ## Run it locally
 

@@ -2,7 +2,7 @@
    CONFIG — edit these values. They are reused across the page.
    ------------------------------------------------------------
    NAME            = "Zunera Haroon"            // [CONFIRM SPELLING]
-   TITLE           = "Licensed Psychologist"
+   TITLE           = "Qualified Psychologist"
    WHATSAPP_NUMBER = "923345516998"             // [CONFIRM THIS IS HER WHATSAPP NUMBER]
    WHATSAPP_PREFILL = greeting used in every WhatsApp link
    EMAIL           = "zunera194@gmail.com"      // [CONFIRM]
@@ -16,7 +16,7 @@
    ============================================================ */
 const CONFIG = {
   NAME: "Zunera Haroon", // [CONFIRM SPELLING]
-  TITLE: "Licensed Psychologist",
+  TITLE: "Qualified Psychologist",
   WHATSAPP_NUMBER: "923345516998", // [CONFIRM THIS IS HER WHATSAPP NUMBER]
   WHATSAPP_PREFILL: "Assalamu alaikum, I would like to book a counseling session.",
   EMAIL: "zunera194@gmail.com", // [CONFIRM]
@@ -39,7 +39,7 @@ const CONFIG = {
     encodeURIComponent(CONFIG.WHATSAPP_PREFILL);
 
   const bookingReady = isSet(CONFIG.BOOKING_LINK);
-  const pageTitle = CONFIG.NAME + " | Licensed Psychologist, Online Counseling in Pakistan";
+  const pageTitle = CONFIG.NAME + " | " + CONFIG.TITLE + ", Online Counseling in Pakistan";
 
   document.querySelectorAll("[data-field='name']").forEach(function (el) {
     el.textContent = CONFIG.NAME;
